@@ -1,0 +1,29 @@
+{
+  "name": "@kaushik_varanasi/rocketsgraphql-js-sdk",
+  "version": "1.0.4",
+  "description": "JS SDK to use RocketsGraphQl APIs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RocketsGraphQL/rocket-js-sdk.git"
+  },
+  "keywords": [
+    "js",
+    "sdk",
+    "graphql"
+  ],
+  "author": "Kaushik Varanasi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RocketsGraphQL/rocket-js-sdk/issues"
+  },
+  "homepage": "https://github.com/RocketsGraphQL/rocket-js-sdk#readme",
+  "dependencies": {
+    "axios": "^0.21.4",
+    "js-cookie": "^3.0.1"
+  },
+  "devDependencies": {}
+}
