@@ -11,7 +11,7 @@ const js = {
         }
     },
     login: ({email, password}) => {
-        return axios.post(js.baseURL+"/login", {
+        return axios.post(js.baseURL+"/signin", {
             email: email,
             password: password,
         })
