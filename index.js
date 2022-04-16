@@ -1,39 +1,7 @@
-import axios from "axios";
-import Cookies from 'js-cookie'
+import RocketsClient from "./RocketsClient"
 
-const js = {
-    baseURL: "",
-    configure: (obj) => {
-        if (obj && obj.hasOwnProperty("baseURL")) {
-            if (obj["baseURL"].constructor.name === "String") {
-                js.baseURL = obj["baseURL"]
-            }
-        }
-    },
-    login: ({email, password}) => {
-        return axios.post(js.baseURL+"/signin", {
-            email: email,
-            password: password,
-        })
-    },
-    logout: () => {
-        Cookies.remove("jwt");
-    },
-    register: ({email, password}) => {
-        return axios.post(js.baseURL+"/signup", {
-            email: email,
-            password: password,
-        })
-    },
-    getJWTToken: () => {
-        return Cookies.get("jwt");
-    },
-    isAuthenticated: () => {
-        if (Cookies.get("jwt")) {
-            return true;
-        }
-        return false;
-    },
+const createClient = (config) => {
+    return new RocketsClient(config)
 }
 
-export default js;
+export { createClient, RocketsClient };
