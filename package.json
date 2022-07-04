@@ -1,6 +1,6 @@
 {
   "name": "@rocketgraphql/rocketgraph-js-sdk",
-  "version": "0.3.0",
+  "version": "0.12.5",
   "description": "JS SDK to use RocketGraphQl APIs",
   "main": "index.js",
   "scripts": {
