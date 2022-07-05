@@ -15,8 +15,8 @@ export default class RocketsClient{
 
         if (this.auth.isAuthenticated()) {
             // if this is authenticated, keep refreshing tokens
-            this.auth.refresh()
-            setTimeout(() => this.auth.refresh, 5 * 60 * 1000)
+            // this.auth.refresh()
+            setInterval(() => this.auth.refresh(), 60 * 1000)
         }
     }
 }
